@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>HW09_Q1</title>
+</head>
+
+<body class="box-border	p-0 m-0 w-full" dir="rtl">
+  <div class="container overflow-x-hidden">
+    <!----------------------lg-header----------------------------->
+    <div class="text-gray-400 font-normal lg:fixed top-0 left-0 right-0 z-50 bg-white">
+      <header class="flex w-full h-14 justify-evenly items-center shadow py-8">
+        <nav class="flex gap-72 px-14">
+          <div class="flex justify-center items-center gap-5">
+            <a href="#"><img src="./img/divarlogo.svg" alt="DivarLogo" class="w-12 h-14 inline-block"></a>
+            <div class="w-1 h-7 border-solid text-[rgba(0,0,0,.56)] border-r-2"></div>
+            <a href="#" class="span-color flex items-center text-center gap-2">
+              <iconify-icon icon="carbon:location"></iconify-icon>
+              <span>تهران</span>
+            </a>
+            <a href="#" class="span-color">
+              <select>
+                <option>دسته‌ها</option>
+              </select>
+            </a>
+            <a class="flex items-center gap-2 p-2 bg-gray-100 rounded">
+              <iconify-icon class="span-color" icon="uil:search"></iconify-icon>
+              <input class="w-[460px] h-6 bg-gray-100 outline-none" type="search" placeholder="جستجو در همهٔ آگهی‌ها">
+            </a>
+          </div>
+          <div class="flex justify-center items-center gap-6">
+            <a href="#" class="span-color flex items-center gap-2">
+              <iconify-icon icon="bi:person"></iconify-icon>
+              <span>دیوار من</span>
+            </a>
+            <a href="#" class="span-color flex items-center gap-2">
+              <iconify-icon icon="majesticons:chat-line"></iconify-icon>
+              <span>چت</span>
+            </a>
+            <a href="#" class="span-color">
+              <span>پشتیبانی</span>
+            </a>
+            <button class="bg-[#a62626] p-2 rounded text-white w-24">ثبت آگهی</button>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <!---------------------------sm-header--------------------------------->
+    <div class="bg-white fixed top-0 right-0 left-0 z-50 pt-2 lg:hidden">
+      <header class="flex justify-center items-center w-full px-4 h-16 shadow ">
+        <div class=" flex bg-gray-100 justify-center items-center gap-3 w-80 h-10 rounded">
+          <iconify-icon class="text-gray-400" icon="ion:search"></iconify-icon>
+          <input class="bg-gray-100 outline-none" type="search" placeholder="جستجو در همهٔ آگهی‌ها">
+          <div class="w-1 h-7 border-solid text-[rgba(0,0,0,.56)] border-r-2"></div>
+          <div class="flex items-center justify-center gap-2">
+            <span class="text-gray-400">تهران</span>
+            <iconify-icon class="text-gray-400" icon="ep:location"></iconify-icon>
+          </div>
+        </div>
+      </header>
+      <aside class="w-full h-14 shadow flex items-center">
+        <div class="flex gap-2 overflow-auto no-scrollbar">
+          <button class="button-sidebar">
+            <iconify-icon icon="mi:filter" style="color: #9ca3af;"></iconify-icon>
+            <span>فیلتر‌ها</span>
+          </button>
+          <button class="button-sidebar">
+            <iconify-icon icon="ant-design:bars-outlined" style="color: #9ca3af;" rotate="180deg"></iconify-icon>
+            <span>دسته‌ها</span>
+          </button>
+          <button class="button-sidebar">
+            <span>اکسسوری</span>
+          </button>
+          <button class="button-sidebar">
+            <span>خودرو</span>
+          </button>
+          <button class="button-sidebar">
+            <span>خدمات</span>
+          </button>
+          <button class="button-sidebar">
+            <span>استخدام</span>
+          </button>
+          <button class="button-sidebar">
+            <span>حیوانات</span>
+          </button>
+        </div>
+      </aside>
+    </div>
+    <!-------------------------------sm-main-------------------------------->
+    <main class="mt-24 mx-1.5 w-full">
+      <div class="lg:flex">
+        <!-----------------------------aside in lg--------------------------------->
+        <div class="px-11 max-lg:hidden">
+          <aside class="p-4">
+            <div class="lg:fixed h-screen sticky top-0 py-28 overflow-auto no-scrollbar">
+              <p class="mb-5">دسته ها</p>
+              <div class="side-lg">
+                <img src="icons/icons8-downtown-50.png" alt="downtown">
+                <p>املاک</p>
+              </div>
+              <div class="side-lg">
+                <img src="icons/icons8-car-50.png" alt="car">
+                <p>وسایل نقلیه</p>
+              </div>
+              <div class="side-lg">
+                <img src="icons/icons8-digital-50.png" alt="downtown">
+                <p>کالای دیجیتال</p>
+              </div>
+              <div class="side-lg">
+                <img src="icons/icons8-table-lights-50.png" alt="downtown">
+                <p>خانه و آشپزخانه</p>
+              </div>
+              <div class="side-lg">
+                <img src="icons/icons8-paint-brush-20.png" alt="downtown">
+                <p>خدمات</p>
+              </div>
+              <div class="side-lg">
+                <img src="icons/icons8-watch-24.png" alt="downtown">
+                <p>وسایل شخصی</p>
+              </div>
+              <div class="side-lg">
+                <img src="icons/icons8-dice-64.png" alt="downtown">
+                <p>سرگرمی و فراغت</p>
+              </div>
+              <div class="side-lg">
+                <img src="icons/icons8-social-32.png" alt="downtown">
+                <p>اجتماعی</p>
+              </div>
+              <div class="side-lg">
+                <img src="icons/icons8-chair-48.png" alt="downtown">
+                <p>تجهیزات و صنعتی</p>
+              </div>
+              <div class="side-lg">
+                <img src="./icons/icons8-briefcase-64.png" alt="downtown">
+                <p>استخدام و کاریابی</p>
+              </div>
+              <div class="side-lg">
+                <img src="./icons/icons8-applicants-64.png" alt="downtown">
+                <p>رزومه کارجویان</p>
+              </div>
+              <hr>
+              <div class="side-select">
+                <iconify-icon icon="simple-line-icons:arrow-up" style="color: rgba(0, 0, 0, 0.56);" width="10"
+                  height="10" rotate="180deg"></iconify-icon>
+                <p>محل</p>
+              </div>
+              <hr>
+              <div class="side-select">
+                <iconify-icon icon="simple-line-icons:arrow-up" style="color: rgba(0, 0, 0, 0.56);" width="10"
+                  height="10" rotate="180deg"></iconify-icon>
+                <p>قیمت</p>
+              </div>
+              <hr>
+              <div class="side-select">
+                <iconify-icon icon="simple-line-icons:arrow-up" style="color: rgba(0, 0, 0, 0.56);" width="10"
+                  height="10" rotate="180deg"></iconify-icon>
+                <p>وضعیت آگهی</p>
+              </div>
+              <hr>
+              <div class="p-3 flex gap-4 mt-4">
+                <a class="text-sm text-gray-400" href="#">دربارهٔ دیوار</a>
+                <a class="text-sm text-gray-400" href="#">دریافت برنامه</a>
+                <a class="text-sm text-gray-400" href="#">بلاگ دیوار</a>
+              </div>
+              <div class="flex justify-evenly mt-4">
+                <iconify-icon icon="ant-design:twitter-outlined" style="color: rgba(0, 0, 0, 0.56);" width="22"
+                  height="22"></iconify-icon>
+                <iconify-icon icon="basil:instagram-solid" style="color: rgba(0, 0, 0, 0.56);" width="22" height="22"
+                  rotate="180deg"></iconify-icon>
+                <iconify-icon icon="uil:linkedin" style="color: rgba(0, 0, 0, 0.56);" width="20"
+                  height="20"></iconify-icon>
+                <iconify-icon icon="simple-icons:aparat" style="color: rgba(0, 0, 0, 0.56);" width="20" height="20"
+                  rotate="180deg"></iconify-icon>
+              </div>
+              <div class="flex gap-4 mt-7">
+                <img src="./icons/3.jpeg" alt="logo">
+                <img src="./icons/2.png" alt="logo">
+                <img src="./icons/1.png" alt="logo">
+              </div>
+            </div>
+          </aside>
+        </div>
+        <!---------------------------------------cards-------------------------------->
+        <div class=" lg:pr-64 lg:w-[1300px]">
+          <div class="mb-3 pr-2">
+            <h1 class="text-gray-400 text-xs px-1 w-[360]">دیوار تهران: انواع آگهی‌ها و خدمات در تهران</h1>
+          </div>
+
+          <div class="max-md:grid grid-col-1 p-1 w-full pb-11 gap-4  lg:grid lg:grid-cols-3">
+            <div class="product-container">
+              <div>
+                <h2 class="tittle">ساعت مچی رادو مردانه</h2>
+                <p class="text-gray-400">در حد نو</p>
+                <p class="text-gray-400">25000000تومان</p>
+                <p class="text-gray-400">لحظاتی پیش در شهرک ولیعصر</p>
+              </div>
+              <div class="products-img">
+                <iconify-icon icon="bi:chat"></iconify-icon>
+                <img class="w-32 h-32 pt-2" src="./img/32.webp" alt="watch">
+              </div>
+            </div>
+            <div class="product-container">
+              <div>
+                <h2 class="tittle">خریدار بیت کوین</h2>
+                <p class="text-gray-400">و تمامی ارزهای شما</p>
+                <p class="text-gray-400">قیمت توافقی</p>
+                <p class="text-gray-400"> لحظاتی پیش در باغ فیض آباد</p>
+              </div>
+              <div class="products-img">
+                <iconify-icon icon="bi:chat"></iconify-icon>
+                <img class="w-32 h-32 pt-2" src="./img/17.webp" alt="BitCoin">
+              </div>
+            </div>
+            <div class="product-container">
+              <div>
+                <h2 class="tittle">سنتور12 خرک سبک فضل </h2>
+                <p class="text-gray-400">در حد نو</p>
+                <p class="text-gray-400">11500000تومان</p>
+                <p class="text-gray-400">دانشگاه تهران</p>
+              </div>
+              <div class="products-img">
+                <iconify-icon icon="bi:chat"></iconify-icon>
+                <img class="w-32 h-32 pt-2" src="./img/33.webp" alt="Santoor">
+              </div>
+            </div>
+            <div class="product-container">
+              <div>
+                <h2 class="tittle">ادکلن مگاماره اصل فرانسه</h2>
+                <p class="text-gray-400">نو</p>
+                <p class="text-gray-400">410000تومان</p>
+                <p class="text-gray-400">لحظاتی پیش در آرارات </p>
+              </div>
+              <div class="products-img">
+                <iconify-icon icon="bi:chat"></iconify-icon>
+                <img class="w-32 h-32 pt-2" src="./img/34.webp" alt="Perform">
+              </div>
+            </div>
+            <div class="product-container">
+              <div>
+                <h2 class="tittle">ساعت کاسیو جی شاک</h2>
+                <p class="text-gray-400">در حد نو</p>
+                <p class="text-gray-400">4500000تومان</p>
+                <p class="text-gray-400">لحظاتی پیش در باغ فیض آباد</p>
+              </div>
+              <div class="products-img">
+                <iconify-icon icon="bi:chat"></iconify-icon>
+                <img class="w-32 h-32 pt-2" src="./img/35.webp" alt="watch">
+              </div>
+            </div>
+            <div class="product-container">
+              <div>
+                <h2 class="tittle">میز کار گروهی و کارمندی</h2>
+                <p class="text-gray-400">نو</p>
+                <p class="text-gray-400">3500000تومان</p>
+                <p class="text-gray-400">فروشگاه مهرآرا</p>
+              </div>
+              <div class="products-img">
+                <iconify-icon icon="bi:chat"></iconify-icon>
+                <img class="w-32 h-32 pt-2" src="./img/21.webp" alt="chair">
+              </div>
+            </div>
+            <div class="product-container">
+              <div>
+                <h2 class="tittle">کانتر منشی درابعاد دلخواه</h2>
+                <p class="text-gray-400">نو</p>
+                <p class="text-gray-400">4000000تومان</p>
+                <p class="text-gray-400">فروشگاه مهرآرا</p>
+              </div>
+              <div class="products-img">
+                <iconify-icon icon="bi:chat"></iconify-icon>
+                <img class="w-32 h-32 pt-2" src="./img/22.webp" alt="chair">
+              </div>
+            </div>
+            <div class="product-container">
+              <div>
+                <h2 class="tittle">فروشنده مزون زنانه/بچگانه </h2>
+                <p class="text-gray-400">حداکثر 12 میلیون</p>
+                <p class="text-gray-400">پرداخت ماهیانه</p>
+                <p class="text-gray-400">فوری در شهرک کوهسار</p>
+              </div>
+              <div class="products-img">
+                <iconify-icon icon="bi:chat"></iconify-icon>
+                <img class="w-32 h-32 pt-2" src="./img/23.webp" alt="hypermarket">
+              </div>
+            </div>
+            <div class="product-container">
+              <div>
+                <h2 class="tittle">لباسشویی پانزده کیلویی</h2>
+                <p class="text-gray-400"> در حد نو</p>
+                <p class="text-gray-400">3500000تومان</p>
+                <p class="text-gray-400"> تهرانسر</p>
+              </div>
+              <div class="products-img">
+                <iconify-icon icon="bi:chat"></iconify-icon>
+                <img class="w-32 h-32" src="./img/24.webp" alt="washing machine">
+              </div>
+            </div>
+            <div class="product-container">
+              <div>
+                <h2 class="tittle">مجسمه دکوری زئوس</h2>
+                <p class="text-gray-400">نو</p>
+                <p class="text-gray-400">220000تومان</p>
+                <p class="text-gray-400">لحظاتی پیش در خانی آباد نور</p>
+              </div>
+              <div class="products-img">
+                <iconify-icon icon="bi:chat"></iconify-icon>
+                <img class="w-32 h-32 pt-2" src="./img/36.webp" alt="figure">
+              </div>
+            </div>
+            <div class="product-container">
+              <div>
+                <h2 class="tittle">جارو شارژی XO</h2>
+                <p class="text-gray-400">نو</p>
+                <p class="text-gray-400">1099000تومان</p>
+                <p class="text-gray-400">فروشگاه لوازم برقی ساسپهر</p>
+              </div>
+              <div class="products-img">
+                <iconify-icon icon="bi:chat"></iconify-icon>
+                <img class="w-32 h-32 pt-2" src="./img/25.webp" alt="hoover">
+              </div>
+            </div>
+            <div class="product-container">
+              <div>
+                <h2 class="tittle">ساک ورزشی زیره فایبر</h2>
+                <p class="text-gray-400">کارکرده</p>
+                <p class="text-gray-400">270000تومان</p>
+                <p class="text-gray-400">فروشگاه کیف و کفش ایرانی</p>
+              </div>
+              <div class="products-img">
+                <iconify-icon icon="bi:chat"></iconify-icon>
+                <img class="w-32 h-32 pt-2" src="./img/38.webp" alt="bag">
+              </div>
+            </div>
+            <div class="product-container">
+              <div>
+                <h2 class="tittle">بخاری گازی ژاپنی</h2>
+                <p class="text-gray-400">در حد نو</p>
+                <p class="text-gray-400">2000000تومان</p>
+                <p class="text-gray-400">فروشگاه لوازم خانگی ژاپیران</p>
+              </div>
+              <div class="products-img">
+                <iconify-icon icon="bi:chat"></iconify-icon>
+                <img class="w-32 h-32 pt-2" src="./img/39.webp" alt="heater">
+              </div>
+            </div>
+            <div class="product-container">
+              <div>
+                <h2 class="tittle">کلاه اورجینال آدیداس</h2>
+                <p class="text-gray-400">نو</p>
+                <p class="text-gray-400">1800000تومان</p>
+                <p class="text-gray-400">فروشگاه کارانفر در سهروردی</p>
+              </div>
+              <div class="products-img">
+                <iconify-icon icon="bi:chat"></iconify-icon>
+                <img class="w-32 h-32 pt-2" src="./img/40.webp" alt="hat">
+              </div>
+            </div>
+            <div class="product-container">
+              <div>
+                <h2 class="tittle">عینک آفتابی زنانه/مردانه</h2>
+                <p class="text-gray-400">نو</p>
+                <p class="text-gray-400">250000تومان</p>
+                <p class="text-gray-400">لحظاتی پیش در سید خندان</p>
+              </div>
+              <div class="products-img">
+                <iconify-icon icon="bi:chat"></iconify-icon>
+                <img class="w-32 h-32 pt-2" src="./img/41.webp" alt="sunglasses">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+
+
+
+
+    <!---------------------------sm-footer------------------------->
+    <footer class="bg-white fixed bottom-0 left-0 right-0 lg:hidden">
+      <div class="flex items-center justify-center gap-7 px-5 py-1 ">
+        <div class="flex-col">
+          <img class="w-7" src="./img/divarlogo.svg" alt="Divarlogo">
+          <p class="text-xs	text-[#a62626]">آگهی‌ها</p>
+        </div>
+        <div class="text-center">
+          <iconify-icon icon="ant-design:bars-outlined" style="color: rgba(0, 0, 0, 0.56);" width="20" height="20"
+            rotate="180deg"></iconify-icon>
+          <p class="text-gray-400 text-xs	">دسته‌ها</p>
+        </div>
+        <div class="text-center">
+          <iconify-icon icon="el:plus-sign" style="color: rgba(0, 0, 0, 0.56);" width="18" height="18"></iconify-icon>
+          <p class="text-gray-400 text-xs">ثبت آگهی</p>
+        </div>
+        <div class="text-center">
+          <iconify-icon icon="bi:chat-fill" style="color: rgba(0, 0, 0, 0.56);" width="18" height="18"></iconify-icon>
+          <p class="text-gray-400 text-xs">چت</p>
+        </div>
+        <div class="text-center">
+          <iconify-icon icon="bi:person-fill" style="color: rgba(0, 0, 0, 0.56);" width="22" height="22"></iconify-icon>
+          <p class="text-gray-400 text-xs">دیوار من</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
